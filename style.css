@@ -239,30 +239,57 @@ body {
     height: 972px;
     background-color: #FFF;
     display: flex;
+    flex-direction: row-reverse;
 }
 
 .GetInTouch-Form {
     display: flex;
-    justify-content: space-around;
-    /* flex-direction: column; */
+    flex-direction: column;
+    color: #001D5D;
+    font-family: 'Karla', sans-serif;
+}
+
+.GetInTouch-Details {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 40px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: #b8b8b8;
+    opacity: 0.4;
+    color: #001D5D;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.GetInTouch-Header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: #001D5D;
+    font-family: 'Karla', sans-serif;
+    font-size: large;
 }
 
 .GetInTouch-Text {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
     text-align: left;
     font-family: 'Karla', sans-serif;
     color:#525252;
-    margin-left: 60px;
-    margin-right: 60%;
-    margin-top: 5%;
-}
+} 
 
 .GetInTouch-Img {
-    height: 80%;
-    width: 100%;
-    /* justify-content: flex-end; */
+    height: auto;
+    width: 45%;
 }
 
 .EndNavigation-Container {
@@ -302,4 +329,29 @@ body {
 
 hr.DecorativeLine {
     border-top: 1px solid #f6f6f6;
+}
+
+.Ending {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.PrivacyPolicy {
+    display: flex;
+    flex-direction: row;
+}
+
+.Terms-Conditions {
+    padding-left: 50px;
+}
+
+.Socials {
+    padding-right: 50px;
+}
+
+.YouTube, .Twitter, .Instagram, .Snapchat {
+    padding-right: 10px;
 }
